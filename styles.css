@@ -13,7 +13,7 @@ h2  {
 ul {
 list-style-type:none;
 text-align: center;
-border : 5px;
+border : 2px;
 border-style : solid;
 background:white;
 }
@@ -24,7 +24,7 @@ font-family:"source Sans Pro",sans-serif;
 font-weight: bold;
 text-align: center}
 p {
-    text-align: left;
+    text-align: center;
     color:maroon;
     font-family:"source Sans Pro",sans-serif;
     font-weight:bold; 
