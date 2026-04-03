@@ -9,7 +9,8 @@ h1 {
 body {
     margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: pink
+  background: pink;
+  
 }
 
 h2  {
@@ -17,6 +18,11 @@ h2  {
     font-family:"source Sans Pro",sans-serif;
     font-weight: bold;
     color:#1a365d;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 505;
 }
 
 ul {
@@ -30,7 +36,7 @@ display: inline;
 padding-right: 100px; padding-left:100px;
 font-family:"source Sans Pro",sans-serif;
 font-weight: bold;
-text-align: center
+text-align: center;
 }
 
 p {
@@ -38,12 +44,16 @@ p {
     color:#1a365d;
     font-family:"source Sans Pro",sans-serif;
     font-weight:bold; 
+    font-size: 30px;
 }
 
 .p2 {
     max-width: 1000px;
     margin: auto;
     align-items: center;
+    font-size: 20px;
+    font-family:"source Sans Pro",sans-serif;
+    font-weight: 400;
 }
 
 marquee {
@@ -60,11 +70,16 @@ ol {
   display: flex;
   justify-content: center;
   gap: 30px;
-  background: white;
   padding: 30px;
   margin: 0;
   list-style: none;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  z-index: 9999;
+  background: #f1f5f9;
 }
 
 .menu li {
@@ -78,6 +93,7 @@ ol {
   padding: 8px 15px;
   border-radius: 8px;
   transition: 0.3s;
+
 }
 
 .menu a:hover {
@@ -191,6 +207,9 @@ body {
   border: 2px solid transparent;
   cursor: pointer;
   transition: 0.25s;
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
 }
 
 .option input {
@@ -306,4 +325,10 @@ body {
 
 .hero {
   text-align: center;
+}
+
+.marquee-container {
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
 }
