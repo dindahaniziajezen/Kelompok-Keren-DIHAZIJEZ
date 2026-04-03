@@ -1,24 +1,32 @@
-/* Place your CSS styles in this file */
-
 h1 {
     text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: c;
     font-weight: bold;
-    color: pink;}
-body {background-color:lemonchiffon;}
+    color:white;}
+body {background-color:grey;}
 h2  {
     text-align: center;
     font-family:"source Sans Pro",sans-serif;
     font-weight: bold;
-    color:deeppink;
+    color:white;
 }
 ul {
 list-style-type:none;
 text-align: center;
 border : 5px;
 border-style : solid;
-background: cyan;
+background:white;
 }
 li {
 display: inline;
 padding-right: 200px;}
+p {
+    text-align: center;
+}
+.p2 {
+    text-align: center;
+    max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
