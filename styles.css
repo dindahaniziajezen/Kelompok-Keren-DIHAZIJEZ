@@ -24,7 +24,7 @@ font-family:"source Sans Pro",sans-serif;
 font-weight: bold;
 text-align: center}
 p {
-    text-align: center;
+    text-align: left;
     color:maroon;
     font-family:"source Sans Pro",sans-serif;
     font-weight:bold; 
@@ -44,5 +44,5 @@ marquee {
 }
 
 ol {
-    text-align: center;
+    text-align: left;
 }
