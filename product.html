@@ -12,90 +12,98 @@
     </head>
     <body>
 
-        <h1>Check Your Study Type</h1>
-        
-        <ul>
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="design.html">Design</a></li>
             <li>Product</li>
         </ul>
 
-        <br>
-        <marquee>Design By DIHAZIJEZ</marquee>
-        <br>
-
-        <section class="p2">
+        <div class="header">
+        <div class="marquee-container">
+        <marquee>✨ Design By DIHAZIJEZ ✨ Welcome to my project ✨</marquee>
+        </div>
             <h2>Tes Gaya Belajar</h2>
             <p>Berikut 10 soal untuk menentukan tipe gaya belajar (Auditori, Visual, Kinestetik). Pilih jawaban yang paling sesuai dengan dirimu!</p>
 
+        <section class="p2">
             <form id="learning-style-form">
                 <ol>
-                    <li>
-                        <p>Saat belajar sesuatu yang baru, kamu lebih suka:</p>
-                        <label><input type="radio" name="q1" value="A" required> A. Mendengarkan penjelasan</label><br>
-                        <label><input type="radio" name="q1" value="B"> B. Melihat gambar atau video</label><br>
-                        <label><input type="radio" name="q1" value="C"> C. Mencoba langsung</label><br>
-                    </li>
-                    <li>
-                        <p>Kamu lebih mudah mengingat sesuatu jika:</p>
-                        <label><input type="radio" name="q2" value="A" required> A. Mendengarnya berulang-ulang</label><br>
-                        <label><input type="radio" name="q2" value="B"> B. Melihat catatan atau diagram</label><br>
-                        <label><input type="radio" name="q2" value="C"> C. Mengalaminya sendiri</label><br>
-                    </li>
-                    <li>
-                        <p>Saat guru menjelaskan di kelas, kamu lebih fokus jika:</p>
-                        <label><input type="radio" name="q3" value="A" required> A. Guru berbicara jelas</label><br>
-                        <label><input type="radio" name="q3" value="B"> B. Ada tulisan di papan</label><br>
-                        <label><input type="radio" name="q3" value="C"> C. Ada praktik langsung</label><br>
-                    </li>
-                    <li>
-                        <p>Jika diberi petunjuk arah, kamu lebih paham jika:</p>
-                        <label><input type="radio" name="q4" value="A" required> A. Dijelaskan secara lisan</label><br>
-                        <label><input type="radio" name="q4" value="B"> B. Ditunjukkan peta</label><br>
-                        <label><input type="radio" name="q4" value="C"> C. Langsung diajak ke tempatnya</label><br>
-                    </li>
-                    <li>
-                        <p>Ketika menghafal, kamu biasanya:</p>
-                        <label><input type="radio" name="q5" value="A" required> A. Membaca keras-keras</label><br>
-                        <label><input type="radio" name="q5" value="B"> B. Membuat catatan atau highlight</label><br>
-                        <label><input type="radio" name="q5" value="C"> C. Menggerakkan tubuh atau praktik</label><br>
-                    </li>
-                    <li>
-                        <p>Aktivitas yang paling kamu sukai saat belajar:</p>
-                        <label><input type="radio" name="q6" value="A" required> A. Diskusi atau mendengarkan</label><br>
-                        <label><input type="radio" name="q6" value="B"> B. Membaca atau melihat gambar</label><br>
-                        <label><input type="radio" name="q6" value="C"> C. Praktik atau eksperimen</label><br>
-                    </li>
-                    <li>
-                        <p>Saat bosan belajar, kamu cenderung:</p>
-                        <label><input type="radio" name="q7" value="A" required> A. Mendengarkan musik atau bicara</label><br>
-                        <label><input type="radio" name="q7" value="B"> B. Menggambar atau melihat sesuatu</label><br>
-                        <label><input type="radio" name="q7" value="C"> C. Bergerak atau berjalan</label><br>
-                    </li>
-                    <li>
-                        <p>Kamu lebih suka guru yang:</p>
-                        <label><input type="radio" name="q8" value="A" required> A. Banyak menjelaskan</label><br>
-                        <label><input type="radio" name="q8" value="B"> B. Menggunakan media visual</label><br>
-                        <label><input type="radio" name="q8" value="C"> C. Mengajak praktik</label><br>
-                    </li>
-                    <li>
-                        <p>Saat mengingat orang, kamu lebih ingat:</p>
-                        <label><input type="radio" name="q9" value="A" required> A. Suaranya</label><br>
-                        <label><input type="radio" name="q9" value="B"> B. Wajahnya</label><br>
-                        <label><input type="radio" name="q9" value="C"> C. Cara geraknya</label><br>
-                    </li>
-                    <li>
-                        <p>Cara terbaik kamu memahami sesuatu adalah:</p>
-                        <label><input type="radio" name="q10" value="A" required> A. Mendengar penjelasan</label><br>
-                        <label><input type="radio" name="q10" value="B"> B. Melihat contoh</label><br>
-                        <label><input type="radio" name="q10" value="C"> C. Mencoba sendiri</label><br>
-                    </li>
+
+<div class="question">
+  <h3>Saat belajar sesuatu yang baru, kamu lebih suka:</h3>
+  <label class="option"><input type="radio" name="q1" value="A" required><span>A. Mendengarkan penjelasan</span></label>
+  <label class="option"><input type="radio" name="q1" value="B"><span>B. Melihat gambar atau video</span></label>
+  <label class="option"><input type="radio" name="q1" value="C"><span>C. Mencoba langsung</span></label>
+</div>
+
+<div class="question">
+  <h3>Kamu lebih mudah mengingat sesuatu jika:</h3>
+  <label class="option"><input type="radio" name="q2" value="A" required><span>A. Mendengarnya berulang-ulang</span></label>
+  <label class="option"><input type="radio" name="q2" value="B"><span>B. Melihat catatan atau diagram</span></label>
+  <label class="option"><input type="radio" name="q2" value="C"><span>C. Mengalaminya sendiri</span></label>
+</div>
+
+<div class="question">
+  <h3>Saat guru menjelaskan di kelas, kamu lebih fokus jika:</h3>
+  <label class="option"><input type="radio" name="q3" value="A" required><span>A. Guru berbicara jelas</span></label>
+  <label class="option"><input type="radio" name="q3" value="B"><span>B. Ada tulisan di papan</span></label>
+  <label class="option"><input type="radio" name="q3" value="C"><span>C. Ada praktik langsung</span></label>
+</div>
+
+<div class="question">
+  <h3>Jika diberi petunjuk arah, kamu lebih paham jika:</h3>
+  <label class="option"><input type="radio" name="q4" value="A" required><span>A. Dijelaskan secara lisan</span></label>
+  <label class="option"><input type="radio" name="q4" value="B"><span>B. Ditunjukkan peta</span></label>
+  <label class="option"><input type="radio" name="q4" value="C"><span>C. Langsung diajak ke tempatnya</span></label>
+</div>
+
+<div class="question">
+  <h3>Ketika menghafal, kamu biasanya:</h3>
+  <label class="option"><input type="radio" name="q5" value="A" required><span>A. Membaca keras-keras</span></label>
+  <label class="option"><input type="radio" name="q5" value="B"><span>B. Membuat catatan atau highlight</span></label>
+  <label class="option"><input type="radio" name="q5" value="C"><span>C. Menggerakkan tubuh atau praktik</span></label>
+</div>
+
+<div class="question">
+  <h3>Aktivitas yang paling kamu sukai saat belajar:</h3>
+  <label class="option"><input type="radio" name="q6" value="A" required><span>A. Diskusi atau mendengarkan</span></label>
+  <label class="option"><input type="radio" name="q6" value="B"><span>B. Membaca atau melihat gambar</span></label>
+  <label class="option"><input type="radio" name="q6" value="C"><span>C. Praktik atau eksperimen</span></label>
+</div>
+
+<div class="question">
+  <h3>Saat bosan belajar, kamu cenderung:</h3>
+  <label class="option"><input type="radio" name="q7" value="A" required><span>A. Mendengarkan musik atau bicara</span></label>
+  <label class="option"><input type="radio" name="q7" value="B"><span>B. Menggambar atau melihat sesuatu</span></label>
+  <label class="option"><input type="radio" name="q7" value="C"><span>C. Bergerak atau berjalan</span></label>
+</div>
+
+<div class="question">
+  <h3>Kamu lebih suka guru yang:</h3>
+  <label class="option"><input type="radio" name="q8" value="A" required><span>A. Banyak menjelaskan</span></label>
+  <label class="option"><input type="radio" name="q8" value="B"><span>B. Menggunakan media visual</span></label>
+  <label class="option"><input type="radio" name="q8" value="C"><span>C. Mengajak praktik</span></label>
+</div>
+
+<div class="question">
+  <h3>Saat mengingat orang, kamu lebih ingat:</h3>
+  <label class="option"><input type="radio" name="q9" value="A" required><span>A. Suaranya</span></label>
+  <label class="option"><input type="radio" name="q9" value="B"><span>B. Wajahnya</span></label>
+  <label class="option"><input type="radio" name="q9" value="C"><span>C. Cara geraknya</span></label>
+</div>
+
+<div class="question">
+  <h3>Cara terbaik kamu memahami sesuatu adalah:</h3>
+  <label class="option"><input type="radio" name="q10" value="A" required><span>A. Mendengar penjelasan</span></label>
+  <label class="option"><input type="radio" name="q10" value="B"><span>B. Melihat contoh</span></label>
+  <label class="option"><input type="radio" name="q10" value="C"><span>C. Mencoba sendiri</span></label>
+</div>
                 </ol>
-
-                <button type="submit">Temukan Gaya Belajar</button>
+                
+                <button type="submit" class="submit-btn">Temukan Gaya Belajar</button>
             </form>
-
-            <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+            
+            <div id="result" class="submit"></div>
         </section>
 
         <script src="scripts.js"></script>
