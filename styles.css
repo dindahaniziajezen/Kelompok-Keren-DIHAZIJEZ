@@ -1,14 +1,14 @@
 h1 {
     text-align: center;
-    font-family: c;
+    font-family: "source Sans Pro", sans-serif;
     font-weight: bold;
-    color:white;}
-body {background-color:grey;}
+    color:maroon;}
+body {background-color:pink;}
 h2  {
     text-align: center;
     font-family:"source Sans Pro",sans-serif;
     font-weight: bold;
-    color:white;
+    color:maroon;
 }
 ul {
 list-style-type:none;
@@ -19,14 +19,30 @@ background:white;
 }
 li {
 display: inline;
-padding-right: 200px;}
+padding-right: 100px; padding-left:100px;
+font-family:"source Sans Pro",sans-serif;
+font-weight: bold;
+text-align: center}
 p {
     text-align: center;
+    color:maroon;
+    font-family:"source Sans Pro",sans-serif;
+    font-weight:bold; 
 }
 .p2 {
     text-align: center;
     max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: auto;
   box-sizing: border-box;
+  color:maroon
+}
+
+marquee {
+    font-family:"source Sans Pro",sans-serif;
+    font-weight: bold;
+    color:maroon
+}
+
+ol {
+    text-align: center;
 }
