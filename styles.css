@@ -30,7 +30,7 @@ p {
     font-weight:bold; 
 }
 .p2 {
-    text-align: center;
+    text-align: justify;
     max-width: 1000px;
   margin: auto;
   box-sizing: border-box;
