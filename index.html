@@ -1,43 +1,84 @@
 <!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tes Gaya Belajar</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="menu" aria-label="Navigasi utama">
+      <ul class="menu-list">
+        <li><span class="menu-current">Home</span></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="product.html">Product</a></li>
+      </ul>
+    </nav>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Tes Gaya Belajar</title>
-
-        <!-- Load external CSS styles -->
-        <link rel="stylesheet" href="styles.css">
-
-    </head>
-    <body>
-
-        <ul class="menu">
-            <li>Home</li>
-            <li><a href="design.html">Design</a></li>
-            <li><a href="product.html">Product</a></li>
-        </ul>
-
-        <div class="header">
-        <div class="marquee-container">
-        <marquee>✨ Design By DIHAZIJEZ ✨ Welcome to my project ✨</marquee>
+    <header class="hero">
+      <div class="marquee-container" aria-label="Pengumuman situs">
+        <div class="marquee-track">
+          <span>Design by DIHAZIJEZ</span>
+          <span>Welcome to my project</span>
+          <span>Kenali gaya belajarmu</span>
         </div>
-        <p>Hello Friends!</p>
-        <p class="p2"> Web “Gaya Belajar” hadir untuk kamu yang sering merasa sudah belajar cukup lama, tetapi hasilnya belum maksimal. Atau mungkin baru mulai belajar sebentar, tapi sudah kehilangan fokus dan akhirnya terdistraksi hal lain. Hal ini sebenarnya wajar, karena setiap orang memiliki gaya belajar yang berbeda. Ada yang lebih mudah memahami melalui visual (gambar), auditori (mendengar), maupun kinestetik (praktik langsung). Jika cara belajar yang digunakan tidak sesuai dengan gaya belajar, proses belajar bisa terasa membosankan dan kurang efektif. 
-        <br>
-        <br>
-         Melalui web ini, kamu dapat mengikuti tes gaya belajar yang ringan dan mudah dipahami untuk mengetahui tipe belajarmu. Setelah itu, kamu akan mendapatkan hasil beserta rekomendasi metode belajar yang sesuai dan bisa langsung diterapkan. Selain itu, tersedia juga berbagai tips belajar dan fitur untuk memantau perkembanganmu. Dengan tampilan yang sederhana dan bahasa yang tetap santai, web “Gaya Belajar” membantu kamu belajar dengan cara yang lebih efektif, efisien, dan menyenangkan. Jadi, daripada terus mencoba cara yang kurang cocok, lebih baik mulai kenali gaya belajarmu dan tingkatkan cara belajarmu dari sekarang
-        <br>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Hello Friends!</p>
+        <h1>Belajar lebih efektif dimulai dari mengenali caramu memahami materi.</h1>
+        <p class="hero-description">
+          Web "Gaya Belajar" membantu kamu menemukan tipe belajar yang paling cocok:
+          visual, auditori, atau kinestetik. Setelah tes singkat, kamu akan mendapatkan
+          hasil dan saran belajar yang bisa langsung diterapkan.
         </p>
-        <a href="product.html" class="btn-start">IKUTI TES SEKARANG</a>
-        <br>
-        <br>
-        <p>3 Gaya Belajar</p>
-        <p style="font-size: 20px; line-height: 0px; color: #526988; font-weight: 100;"> Macam - macam gaya belajar kamu</p>
-        <p style="margin-right: 1200px;">Visual</p>
-        <br>
-        <p style="font-size: 20px; margin-right: 1200px; font-weight: 10;">Gaya belajar visual adalah cara belajar dengan mengandalkan penglihatan. Orang dengan gaya ini lebih mudah memahami informasi jika disajikan dalam bentuk gambar, diagram, grafik, atau tulisan. Mereka cenderung mengingat apa yang dilihat.</p>
+        <a href="product.html" class="btn-start">Ikuti Tes Sekarang</a>
+      </div>
+    </header>
 
-    </body>
+    <main class="page-section">
+      <section class="intro-card">
+        <h2>Kenapa tes ini penting?</h2>
+        <p>
+          Kadang kita sudah belajar lama, tapi hasilnya belum terasa maksimal. Salah satu
+          penyebabnya adalah metode belajar yang dipakai belum sesuai dengan gaya belajar
+          pribadi. Lewat tes ini, kamu bisa memahami kecenderungan belajarmu dan memilih
+          cara belajar yang terasa lebih efektif, efisien, dan menyenangkan.
+        </p>
+      </section>
 
+      <section class="styles-section" aria-labelledby="gaya-belajar-title">
+        <div class="section-heading">
+          <h2 id="gaya-belajar-title">Tiga Gaya Belajar</h2>
+          <p>Setiap orang bisa punya kecenderungan yang berbeda, bahkan kombinasi dari beberapa tipe.</p>
+        </div>
+
+        <div class="style-grid">
+          <article class="style-card">
+            <h3>Visual</h3>
+            <p>
+              Cocok untuk kamu yang lebih mudah memahami informasi lewat gambar, warna,
+              diagram, grafik, dan video.
+            </p>
+          </article>
+
+          <article class="style-card">
+            <h3>Auditori</h3>
+            <p>
+              Cocok untuk kamu yang lebih cepat menangkap materi lewat penjelasan lisan,
+              diskusi, rekaman suara, atau membaca dengan suara keras.
+            </p>
+          </article>
+
+          <article class="style-card">
+            <h3>Kinestetik</h3>
+            <p>
+              Cocok untuk kamu yang lebih mudah belajar lewat praktik langsung, simulasi,
+              gerakan, dan pengalaman nyata.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
