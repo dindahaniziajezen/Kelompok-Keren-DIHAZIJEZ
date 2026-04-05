@@ -6,28 +6,39 @@
     <title>Product | Tes Gaya Belajar</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body class="page-product">
     <nav class="menu" aria-label="Navigasi utama">
-      <ul class="menu-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="design.html">Design</a></li>
-        <li><span class="menu-current">Product</span></li>
-      </ul>
+      <div class="menu-inner">
+        <div class="brand-mark">DIHAZIJEZ</div>
+        <ul class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><span class="menu-current">Product</span></li>
+        </ul>
+      </div>
     </nav>
 
-    <header class="page-header">
-      <div class="marquee-container" aria-label="Pengumuman situs">
-        <div class="marquee-track">
-          <span>Design by DIHAZIJEZ</span>
-          <span>Welcome to my project</span>
-          <span>Isi 10 soal untuk lihat hasilmu</span>
-        </div>
+    <header class="page-header page-header-quiz">
+      <h1>Pilih jawaban yang paling mirip sama diri kamu.</h1>
+      <p>Nggak ada jawaban benar atau salah. Tinggal pilih yang paling relate sama kebiasaan belajarmu sehari-hari.</p>
+      <div class="quiz-top-note">
+        <span>Visual</span>
+        <span>Auditori</span>
+        <span>Kinestetik</span>
       </div>
-      <h1>Tes Gaya Belajar</h1>
-      <p>Jawab 10 pertanyaan berikut untuk mengetahui kecenderungan gaya belajar kamu.</p>
     </header>
 
     <main class="page-section">
+      <section class="quiz-intro-grid quiz-intro-simple">
+        <article class="quiz-promo-card quiz-promo-wide">
+          <p class="mini-label">Cara pakai</p>
+          <h2>Tes cepat dulu, baru cari cara belajar yang paling cocok.</h2>
+          <p>
+            Isi sesuai kebiasaanmu aja. Hasil akhirnya bakal nunjukin kecenderungan gaya belajar yang paling dekat sama kamu.
+          </p>
+        </article>
+      </section>
+
       <section class="quiz-card">
         <form id="learning-style-form">
           <div class="question">
@@ -100,7 +111,7 @@
             <label class="option"><input type="radio" name="q10" value="C"><span>C. Mencoba sendiri</span></label>
           </div>
 
-          <button type="submit" class="submit-btn">Temukan Gaya Belajar</button>
+          <button type="submit" class="submit-btn">Lihat Hasil Aku</button>
         </form>
       </section>
     </main>
