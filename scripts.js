@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       sessionStorage.setItem("learningStyleResult", JSON.stringify(resultMap[resultKey]));
-      window.location.href = "visual.html";
+      window.location.href = "result.html";
     });
   }
 
