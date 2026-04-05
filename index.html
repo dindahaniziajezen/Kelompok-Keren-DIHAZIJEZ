@@ -3,57 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Design | Tes Gaya Belajar</title>
+    <title>Tes Gaya Belajar</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="page-design">
+  <body class="page-home">
     <nav class="menu" aria-label="Navigasi utama">
       <div class="menu-inner">
         <div class="brand-mark">DIHAZIJEZ</div>
         <ul class="menu-list">
-          <li><a href="index.html">Home</a></li>
-          <li><span class="menu-current">Design</span></li>
+          <li><span class="menu-current">Home</span></li>
+          <li><a href="design.html">Design</a></li>
           <li><a href="product.html">Product</a></li>
         </ul>
       </div>
     </nav>
 
-    <header class="page-header">
-      <h1>Halaman design buat nunjukin vibe project ini.</h1>
-      <p>Halaman ini isinya preview dan sedikit gambaran style web yang dipakai di project ini.</p>
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Project Gaya Belajar</p>
+            <h1>Belajar tuh nggak harus bikin pusing kalau kamu udah tahu gaya belajarmu.</h1>
+            <p class="hero-description">
+              Website ini bantu kamu cari tahu cara belajar yang paling cocok buat kamu lewat tes yang singkat dan santai.
+            </p>
+            <div class="pill-row">
+              <span class="info-pill">Visual vibes</span>
+              <span class="info-pill">Audio mode</span>
+              <span class="info-pill">Gerak aktif</span>
+            </div>
+            <div class="hero-actions">
+              <a href="product.html" class="btn-start">Mulai Tes</a>
+              <a href="#gaya-belajar-title" class="btn-secondary">Lihat Tipe Belajar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </header>
 
     <main class="page-section">
-      <section class="design-board">
-        <article class="design-feature-card design-main-card">
-          <p class="mini-label">Design note</p>
-          <h2>Tampilannya sengaja dibikin simpel, cerah, dan gampang dilihat.</h2>
-          <p>Tujuannya biar web ini terasa kayak project sekolah yang niat, bukan template website.</p>
-        </article>
+      <section class="banner-strip" aria-label="Highlight fitur">
+        <div class="banner-strip-track">
+          <span>Tes singkat</span>
+          <span>Hasil instan</span>
+          <span>Tips belajar</span>
+          <span>Lebih kenal diri sendiri</span>
+          <span>Belajar jadi lebih chill</span>
+        </div>
+      </section>
 
-        <div class="design-preview-grid design-preview-grid-simple">
-          <article class="preview-card sketch-card">
-            <p class="mini-label">Layout</p>
-            <h3>Lebih fokus ke isi</h3>
-            <p>Bagian yang nggak penting dibuang supaya tampilannya lebih santai dan nggak ramai.</p>
+      <section class="science-section">
+        <div class="section-heading">
+          <h2 id="gaya-belajar-title">Tipe belajar yang mungkin banget kamu banget</h2>
+        </div>
+
+        <div class="science-grid">
+          <article class="science-intro-card science-intro-wide">
+            <p class="mini-label">Kenapa penting?</p>
+            <h3>Soalnya belajar itu bukan cuma soal lama, tapi soal cocok atau nggak.</h3>
+            <p>
+              Kadang kita udah belajar lama, tapi tetap susah paham. Salah satu alasannya bisa jadi karena cara belajarnya belum cocok.
+            </p>
+            <a href="product.html" class="text-link">Coba tesnya</a>
+          </article>
+        </div>
+
+        <div class="learning-types">
+          <article class="learning-type-card">
+            <h3>Visual</h3>
+            <p>
+              Tipe ini biasanya lebih mudah paham lewat gambar, warna, diagram, video, atau catatan yang enak dilihat.
+            </p>
           </article>
 
-          <article class="preview-card sketch-card">
-            <p class="mini-label">Style</p>
-            <h3>Simple tapi tetap enak</h3>
-            <p>Warna dan bentuknya dibikin ringan supaya gampang dipresentasiin dan gampang dipakai.</p>
+          <article class="learning-type-card">
+            <h3>Auditori</h3>
+            <p>
+              Tipe ini biasanya lebih cepat nangkep materi lewat penjelasan lisan, diskusi, ngobrol, atau dengar audio.
+            </p>
+          </article>
+
+          <article class="learning-type-card">
+            <h3>Kinestetik</h3>
+            <p>
+              Tipe ini biasanya lebih gampang ngerti kalau belajar sambil praktik, mencoba langsung, atau sambil bergerak.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="canva-wrapper">
-        <iframe
-          src="https://www.canva.com/design/DAHCYqIVzfM/KktYaF7nyShPlvq_w7BbAQ/view?embed"
-          title="Canva design preview"
-          loading="lazy"
-          allow="fullscreen; autoplay; clipboard-write"
-          allowfullscreen
-        ></iframe>
+      <section class="story-section story-section-simple">
+        <div class="story-copy story-copy-full">
+          <p class="mini-label">Sedikit cerita</p>
+          <h2>Website ini dibikin biar belajar terasa lebih dekat, bukan lebih ribet.</h2>
+          <p>
+            Intinya simpel: kenali gaya belajar, lihat hasilnya, lalu pakai cara belajar yang lebih cocok.
+          </p>
+          <a href="design.html" class="btn-secondary">Lihat halaman design</a>
+        </div>
       </section>
     </main>
   </body>
