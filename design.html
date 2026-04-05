@@ -1,32 +1,42 @@
 <!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design | Tes Gaya Belajar</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="menu" aria-label="Navigasi utama">
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><span class="menu-current">Design</span></li>
+        <li><a href="product.html">Product</a></li>
+      </ul>
+    </nav>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-
-        <title>Blank template</title>
-
-        <!-- Load external CSS styles -->
-        <link rel="stylesheet" href="styles.css">
-
-    </head>
-    <body>
-
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li>Design</li>
-            <li><a href="product.html">Product</a></li>
-        </ul>
-
-        <div class="header">
-        <div class="marquee-container">
-        <marquee>✨ Design By DIHAZIJEZ ✨ Welcome to my project ✨</marquee>
+    <header class="page-header">
+      <div class="marquee-container" aria-label="Pengumuman situs">
+        <div class="marquee-track">
+          <span>Design by DIHAZIJEZ</span>
+          <span>Welcome to my project</span>
+          <span>Preview presentasi desain</span>
         </div>
-        <p>Hello Friends!</p>
-        </div>
-        <div class="canva-wrapper">
-            <iframe src="https://www.canva.com/design/DAHCYqIVzfM/KktYaF7nyShPlvq_w7BbAQ/view?embed" width="100%" height="100%" frameborder="0" allow="fullscreen; autoplay; clipboard-write" allowfullscreen style="border:none;"></iframe>
-        </div>
-    </body>
+      </div>
+      <h1>Halaman Design</h1>
+      <p>Lihat tampilan desain proyek secara langsung melalui Canva embed di bawah ini.</p>
+    </header>
 
+    <main class="page-section">
+      <section class="canva-wrapper">
+        <iframe
+          src="https://www.canva.com/design/DAHCYqIVzfM/KktYaF7nyShPlvq_w7BbAQ/view?embed"
+          title="Canva design preview"
+          loading="lazy"
+          allow="fullscreen; autoplay; clipboard-write"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+  </body>
 </html>
