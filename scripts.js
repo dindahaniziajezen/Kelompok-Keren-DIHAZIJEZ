@@ -4,36 +4,36 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Kamu adalah tipe Auditori!",
       description: "Kamu lebih mudah belajar dengan mendengarkan penjelasan, diskusi, atau audio.",
       tips: [
-        "Coba rekam penjelasan materi lalu dengarkan kembali.",
-        "Belajar lewat diskusi atau tanya jawab akan sangat membantu.",
-        "Baca materi dengan suara keras agar lebih mudah diingat."
+        "Coba rekam materi lalu dengarkan kembali.",
+        "Belajar lewat diskusi bisa membantu kamu lebih cepat paham.",
+        "Baca materi dengan suara keras supaya lebih mudah diingat."
       ]
     },
     visual: {
       title: "Kamu adalah tipe Visual!",
       description: "Kamu lebih mudah belajar dengan gambar, diagram, warna, dan video.",
       tips: [
-        "Gunakan warna, diagram, atau mind map saat mencatat.",
-        "Tonton video pembelajaran untuk memperkuat pemahaman.",
-        "Susun materi dalam bentuk ringkasan visual."
+        "Gunakan warna atau mind map saat mencatat.",
+        "Tonton video pembelajaran untuk memperjelas materi.",
+        "Buat ringkasan dalam bentuk visual."
       ]
     },
     kinestetik: {
       title: "Kamu adalah tipe Kinestetik!",
       description: "Kamu lebih mudah belajar dengan praktik langsung dan pengalaman.",
       tips: [
-        "Coba belajar sambil praktik atau membuat simulasi kecil.",
-        "Gunakan alat bantu fisik agar materi terasa lebih nyata.",
-        "Belajar bertahap sambil bergerak bisa membantu fokus."
+        "Belajar sambil praktik akan lebih membantu.",
+        "Gunakan alat bantu atau simulasi sederhana.",
+        "Belajar bertahap sambil bergerak bisa bikin kamu lebih fokus."
       ]
     },
     kombinasi: {
       title: "Kamu punya gaya belajar kombinasi!",
-      description: "Kamu bisa belajar efektif dengan memadukan cara visual, auditori, dan kinestetik.",
+      description: "Kamu cocok belajar dengan memadukan beberapa cara sekaligus.",
       tips: [
-        "Gabungkan catatan visual, diskusi, dan praktik sederhana.",
-        "Uji beberapa metode belajar untuk melihat mana yang paling cocok.",
-        "Sesuaikan cara belajar dengan jenis materi yang sedang dipelajari."
+        "Gabungkan catatan visual, diskusi, dan praktik.",
+        "Coba beberapa metode lalu lihat mana yang paling nyaman.",
+        "Sesuaikan metode belajar dengan jenis materi."
       ]
     }
   };
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       var resultKey = "kombinasi";
+
       if (counts.A > counts.B && counts.A > counts.C) {
         resultKey = "auditori";
       } else if (counts.B > counts.A && counts.B > counts.C) {
@@ -72,22 +73,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (resultTitle && resultDescription && resultTips) {
     var storedResult = sessionStorage.getItem("learningStyleResult");
-    var activeResult = resultMap.visual;
 
-    if (storedResult) {
-      try {
-        activeResult = JSON.parse(storedResult);
-      } catch (error) {
-        activeResult = resultMap.visual;
-      }
+    if (!storedResult) {
+      return;
     }
 
-    resultTitle.textContent = activeResult.title;
-    resultDescription.textContent = activeResult.description;
-    resultTips.innerHTML = activeResult.tips
-      .map(function (tip) {
-        return "<li>" + tip + "</li>";
-      })
-      .join("");
+    try {
+      var activeResult = JSON.parse(storedResult);
+      resultTitle.textContent = activeResult.title;
+      resultDescription.textContent = activeResult.description;
+      resultTips.innerHTML = activeResult.tips
+        .map(function (tip) {
+          return "<li>" + tip + "</li>";
+        })
+        .join("");
+    } catch (error) {
+      resultTitle.textContent = "Hasil tes kamu belum tersedia.";
+      resultDescription.textContent = "Coba isi tes lagi dari halaman product.";
+      resultTips.innerHTML = "<li>Masuk ke halaman product lalu isi tes terlebih dahulu.</li>";
+    }
   }
 });
