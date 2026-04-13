@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
+
 :root {
   --bg: #fff6fb;
   --surface: #fffafd;
@@ -49,12 +51,20 @@ a {
 }
 
 .brand {
-  padding: 10px 14px;
+  padding: 8px 16px 10px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #ffc5e2 0%, #ffe6f3 100%);
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--primary-dark);
+  background: linear-gradient(135deg, #ffb7d8 0%, #ffe4f2 100%);
+  font-family: "Cherry Bomb One", "Trebuchet MS", Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-shadow:
+    -1px -1px 0 #d88ab0,
+    1px -1px 0 #d88ab0,
+    -1px 1px 0 #d88ab0,
+    1px 1px 0 #d88ab0,
+    0 3px 10px rgba(216, 138, 176, 0.25);
 }
 
 .nav-links {
@@ -234,11 +244,21 @@ h3,
 }
 
 .section-block {
-  margin: 24px 0;
+  margin: 0;
+}
+
+.learning-main {
+  margin-bottom: 22px;
 }
 
 .section-heading {
   margin-bottom: 14px;
+}
+
+.learning-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .grid {
@@ -332,6 +352,10 @@ h3,
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .learning-list {
+    grid-template-columns: 1fr;
   }
 
   .grid-3 {
